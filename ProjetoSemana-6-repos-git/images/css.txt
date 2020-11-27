@@ -1,0 +1,3 @@
+Sobre o CSS: CSS (Cascading Style Sheets) são folhas de estilo em cascata. O CSS é uma linguagem que complementa e formata o HTML (HyperText Markup Language, a Linguagem de Marcação de Hipertexto) organizando melhor as linhas e adicionando novas possibilidades ao código. Com ele, você pode modificar praticamente tudo dentro do seu layout. 
+
+O CSS ajuda a manter as informações de um documento separadas dos detalhes de como exibi-la. Esses detalhes de como exibir o documento são conhecidos como estilo. Você mantém o estilo separado do conteúdo e assim, pode evitar duplicação, tornar a manutenção mais fácil e utilizar o conteúdo com diferentes estilos para diferentes propósitos.

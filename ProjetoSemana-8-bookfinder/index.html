@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link id="pagestyle" rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-cyan.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Google Books API</title>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .demo-card-wide {
+            padding: 5px;
+            margin: 5px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .demo-card-wide:hover {
+            background-color: rgb(221, 221, 220);
+            color: black;
+        }
+
+        .mdl-card__title {
+            width: 500px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2em;
+        }
+
+        .link {
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .link:hover {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--scroll">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <a href="index.html">
+                    <img style="cursor: pointer;"
+                        src="https://faculdadeiv2.com.br/img/new/home-split/logo-extenso-branco.png" width="200">
+                </a>
+                <!-- Navigation -->
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer" style="margin-left: 100px;">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+                            style="display: flex; width: 500px;">
+                            <select id="selec" class="mdl-textfield__input" style="color: black;">
+                                <option value="search" selected>Busca Geral</option>
+                                <option value="intitle">Busca Por Nome</option>
+                                <option value="inauthor">Busca por Autor</option>
+                                <option value="Titulo">Busca Por Título</option>
+                                <option value="inpublisher">Busca por Publicadora</option>
+                                <option value="subject">Lista do Volume</option>
+                                <option value="isbn">Busca Por ISBN</option>
+                                <option value="lccn">Busca Por LCCN</option>
+                                <option value="oclc">Busca Por OCLC</option>
+                            </select>
+                            <input class="mdl-textfield__input" style="color: black;" type="text" id="Input">
+                            <label class="mdl-textfield__label">Digite o Conteúdo...</label>
+                            <span class="material-icons" style="cursor: pointer; color: black;" onclick="loadlivros()"
+                                id="srcbtn">
+                                search
+                            </span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+
+        <div id="conteudo" style="display: flex; flex-wrap: wrap; margin-bottom: 100px;"></div>
+
+        <!-- footer -->
+        <footer class="mdl-mini-footer" style="z-index: 1000;position: fixed; bottom: 0; width: 100%; display:inline">
+            <div>
+                <div class="mdl-mini-footer__left-section">
+                    <ul class="mdl-mini-footer__link-list" style="width: 100%;">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#" style="margin-left: 1065px;">Este Site não Utiliza Cookies</a></li>
+                    </ul>
+                </div>
+        </footer>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

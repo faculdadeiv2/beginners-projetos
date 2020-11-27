@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-light_blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>Projeto Semana 4</title>
+    <style>
+        .demo-card-wide.mdl-card {
+            width: 640px;
+            height: 300px;
+
+        }
+
+        .mdl-card__actions {
+
+            outline: skyblue solid 5px;
+            z-index: 4;
+
+
+        }
+
+        #name {
+            display: flex;
+            margin-top: 10px;
+            justify-content: left;
+        }
+
+        #contact {
+            display: flex;
+
+        }
+
+
+        .mdl-button {
+            margin-left: 10px;
+
+        }
+
+        .demo-card-wide {
+            height: 200px;
+        }
+
+
+        .demo-card-wide>.mdl-card__title {
+            color: #fff;
+            height: 64px;
+            background-color: indigo;
+        }
+
+        .mdl-card__title-text {
+            position: relative;
+            top: 6px;
+
+        }
+
+        .demo-card-wide>.mdl-card__menu {
+            color: #fff;
+        }
+
+
+        #mycard {
+            height: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mdl-textfield {
+            width: 250px;
+            margin-right: 10px;
+        }
+
+        .black {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--scroll">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <a href="cadastro.html">
+                    <img style="cursor: pointer;"
+                        src="https://faculdadeiv2.com.br/img/new/home-split/logo-extenso-branco.png" width="200">
+                </a>
+
+                <!-- Navigation -->
+                <nav class="mdl-navigation" style="transform: translateX(800px);">
+                    <a class="mdl-navigation__link" href="#">Cadastro</a>
+                    <a class="mdl-navigation__link" href="consulta.html">Consulta</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main -->
+
+        <div id="mycard">
+
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Cadastre aqui seu produto</h2>
+                </div>
+
+
+                <div class="mdl-card__supporting-text">
+                    <form action="#">
+                        <div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input id="name" class="mdl-textfield__input" type="text">
+                                <label class="mdl-textfield__label" for="sample3">Nome do Produto</label>
+                            </div>
+                        </div>
+
+                        <div class="mySelec">
+                            <select id="equip" class="mdl-textfield__input"
+                                style="width: 250px; color: rgba(128, 128, 128, 0.5);">
+                                <option value="" disabled selected style="color: rgba(128, 128, 128, 0.4);">Selecione
+                                    uma opção</option>
+                                <option value="Máquinas" class="black">Máquinas</option>
+                                <option value="Acessórios" class="black">Acessórios</option>
+                                <option value="Laptops" class="black">Laptops</option>
+                            </select>
+                        </div>
+
+                        <div id="Nserie">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="ns" oninput="apenasNumeros()">
+                                <label class="mdl-textfield__label" for="sample2">Número de Série</label>
+                            </div>
+                        </div>
+
+                        <div style="transform: translate(300px, -112.5px);">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="carac">
+                                <label class="mdl-textfield__label" for="sample3">Características do
+                                    Produto</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+
+            </div>
+
+            <!-- FAB button with ripple -->
+            <div id="next">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onclick="salvar()">
+                    <i class="material-icons">arrow_forward</i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>

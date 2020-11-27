@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Icone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="title" onclick="changeText()">
+            Uzumaki Naruto
+        </div>
+
+        <header>
+            <nav class="navbardiv">
+                <a href="#description" class="nav">Sobre</a>
+                <a href="#gallery" class="nav">Imagens</a>
+                <a href="#tl" class="nav">Linha do Tempo</a>
+            </nav>
+        </header>
+
+        <div id="img-div">
+            <img onclick="changeImg()" src="https://fatosdesconhecidos.com.br/wp-content/uploads/2019/11/naruto-4.jpg"
+                alt="iconImage" id="ic">
+        </div>
+        <div class="description" id="description">
+            Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) é um shinobi de Konohagakure, também sendo a reencarnação atual de
+            Asura e o protagonista homônimo da franquia Naruto. Ele se tornou o jinchūriki de Kurama no dia de seu
+            nascimento, um destino que o levou a ser condenado ao ostracismo e ser negligenciado por toda a aldeia
+            durante toda a sua infância. Depois de entrar para o Time Kakashi, Naruto trabalhou duro para ganhar o
+            respeito e o reconhecimento da aldeia, com o sonho de se tornar Hokage. Nos anos seguintes, Naruto torna-se
+            um ninja capaz, que é eventualmente considerado como um herói, tanto por parte dos moradores como pelo mundo
+            shinobi em geral. O objetivo de Naruto em se tornar Hokage foi deixado de lado, devido a ele querer salvar o
+            seu melhor amigo e companheiro de equipe, Sasuke Uchiha, que sucumbiu ao ódio e à escuridão, eventualmente,
+            Naruto consegue cumprir esse objetivo após derrotá-lo em sua batalha final. Anos depois da Quarta Guerra
+            Mundial Shinobi, Naruto realiza seu sonho e se torna o Sétimo Hokage (七代目火影, Nanadaime Hokage; Literalmente
+            significa "Sétima Sombra do Fogo"), enquanto também se casa com Hinata Hyūga e tem dois filhos com ela,
+            Boruto e Himawari Uzumaki.
+        </div>
+        <div class="TimeLine"id="tl">
+            <p>
+                2002 - Prólogo - País das Ondas
+            </p>
+            <p>
+                2003 - Exames Chunin
+            </p>
+            <p>
+                2003- Esmagamento de Konoha
+            </p>
+            <p>
+                2004 - Busca por Tsunade
+            </p>
+            <p>
+                2004 - Missão de Recuperação de Sasuke
+            </p>
+            <p>
+                2005 - O Mestre Destemido e o Estudante: O Treinamento
+            </p>
+            <p>
+                2005 - Seguindo os Passos de Naruto: Os Caminhos dos Amigos
+            </p>
+            <p>
+                2006 - Missão de Resgate ao Kazekage
+            </p>
+            <p>
+                2006 - Missão de Reconhecimento na Ponte Tenshi
+            </p>
+            <p>
+                2007 - Doze Guardiões Ninja
+            </p>
+            <p>
+                2007 - Missão de Repressão da Akatsuki
+            </p>
+            <p>
+                2007 - Aparição do Três-Caudas
+            </p>
+            <p>
+                2008 - Missão de Perseguição a Itachi
+            </p>
+            <p>
+                2008 - O Conto de Jiraiya, o Destemido
+            </p>
+            <p>
+                2008 - Liberação do Seis-Caudas
+            </p>
+            <p>
+                2009 - Ataque de Pain
+            </p>
+            <p>
+                2010 - Reunião dos Cinco Kage
+            </p>
+            <p>
+                2012 - Quarta Guerra Mundial Shinobi: Contagem Regressiva
+            </p>
+            <a target="_blank" href="https://naruto.fandom.com/pt-br/wiki/Naruto_Uzumaki">Clique aqui para maiores informações...</a>
+        </div>
+        <div class="myGallery" id="gallery">
+            <img src="https://images3.alphacoders.com/234/thumb-1920-234939.jpg" class="gallyPhoto">
+            <img src="https://image.tmdb.org/t/p/original/vSkgo2uUqSNb9IV3A0unqoy2FtM.jpg" class="gallyPhoto">
+            <img src="https://nerdhits.com.br/wp-content/uploads/2020/08/jutsu-mais-forte-naruto.jpg" class="gallyPhoto">
+            <img src="https://static.quizur.com/i/b/57859b727db405.1728613857859b726f7da0.75109251.jpg" class="gallyPhoto">
+            <img src="https://viciados.net/wp-content/uploads/2020/02/Naruto-Cl%C3%A1ssico-e-Naruto-Shippuden-fillers.jpg" class="gallyPhoto">
+            <img src="https://www.nexojornal.com.br/incoming/imagens/The-Last-Naruto-%C3%BAltimo-filme-da-franquia/alternates/LANDSCAPE_768/The%20Last%20Naruto%20-%20%C3%BAltimo%20filme%20da%20franquia" class="gallyPhoto">
+            <img src="data:image/jpeg;base64,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" class="gallyPhoto">
+            <img src="https://i.pinimg.com/originals/e5/3b/d5/e53bd5993cde66033304ac3ced29805c.jpg" class="gallyPhoto">
+            <img src="https://i.pinimg.com/originals/23/a9/4a/23a94aed7c682974227a4c63374e300d.jpg" class="gallyPhoto">
+        </div>
+        <footer class="footer">
+            <p class="date"></p>
+        </footer>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
