@@ -2,7 +2,7 @@ const listElement = document.querySelector('ul')
 const inputElement = document.querySelector('input')
 const buttonElement = document.querySelector('button')
 
-const tarefas = JSON.parse(localStorage.getItem('list_tarefas')) || []
+const tarefas = []
 
 function mostraTarefas() {
 
@@ -13,10 +13,11 @@ function mostraTarefas() {
         const itemList = document.createElement('li')
         const itemText = document.createTextNode(item)
 
-        // itemList.setAttribute('class', 'mdl-list__item')
+        itemList.setAttribute('class', 'mdl-list__item')
 
         const linkElement = document.createElement('a')
-        // linkElement.setAttribute('class', 'material-icons')
+
+        linkElement.setAttribute('class', 'material-icons')
 
         const linkText = document.createTextNode('delete')
         linkElement.appendChild(linkText)
@@ -40,7 +41,6 @@ function addTerefa() {
 
     inputElement.value = ''
     mostraTarefas()
-    salvarNoLocalStorage()
 }
 
 buttonElement.setAttribute('onclick', 'addTerefa()')
@@ -48,9 +48,4 @@ buttonElement.setAttribute('onclick', 'addTerefa()')
 function removeTarefa(pos) {
     tarefas.splice(pos, 1)
     mostraTarefas()
-    salvarNoLocalStorage()
-}
-
-function salvarNoLocalStorage() {
-    localStorage.setItem('list_tarefas', JSON.stringify(tarefas))
 }
